@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../img/fundologin.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;  /* Centraliza a logo horizontalmente */
+    align-items: center;      /* Centraliza a logo verticalmente */
+    height: 100px;
+    padding: 80px;           /* Ajuste a altura do cabeçalho conforme necessário */
+}
+
+header img {
+    max-width: 200px;         /* Limita o tamanho da logo para um valor específico (ajuste conforme necessário) */
+    height: auto;            /* Mantém a proporção da imagem */
+}
+
+.form-box-login, .form-box-cadastro {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.form-box-login h2, .form-box-cadastro h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.inputbox {
+    position: relative;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputbox input:focus ~ label, .inputbox input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+button {
+    width: 100%;
+    background: #03a9f4;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: #1cb1f5;
+}
+
+.register, .register p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.error {
+    color: #f00;
+    margin-top: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar .user-info {
+    text-align: center;
+}
+
+.sidebar .user-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.sidebar .user-info h3 {
+    margin: 10px 0;
+    color: #fff;
+}
+
+.sidebar .user-info p {
+    color: #bbb;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
